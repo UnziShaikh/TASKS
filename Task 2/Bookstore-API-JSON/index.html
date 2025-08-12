@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📚 Book Store API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        button {
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 30px;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>📘 Welcome to the Book Store API</h1>
+    <button onclick="getBooks()">📖 Get All Books</button>
+    <button onclick="addBook()">➕ Add Book</button>
+    <button onclick="deleteBook()">❌ Delete Book ID 2</button>
+    
+    <div id="output">📦 Output will appear here...</div>
+
+    <script>
+        const baseUrl = "http://localhost:3000/books";
+
+        function getBooks() {
+            fetch(baseUrl)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("output").innerText = JSON.stringify(data, null, 4);
+                });
+        }
+
+        function addBook() {
+            const book = {
+                title: "💡 New Book",
+                author: "Author Bot",
+                genre: "Tech",
+                price: 12.99
+            };
+
+            fetch(baseUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(book)
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("output").innerText = "✅ Book Added:\n" + JSON.stringify(data, null, 4);
+            });
+        }
+
+        function deleteBook() {
+            fetch(baseUrl + "/2", {
+                method: "DELETE"
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("output").innerText = "🗑️ Book Deleted:\n" + JSON.stringify(data, null, 4);
+            });
+        }
+    </script>
+</body>
+</html>

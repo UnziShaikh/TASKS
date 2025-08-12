@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "price": 10.99
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "price": 8.99
+    }
+]
