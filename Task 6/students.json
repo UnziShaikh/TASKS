@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Ali", "age": 17, "class": 10, "subjects": ["Math", "English"], "isActive": true },
+  { "id": 2, "name": "Sara", "age": 18, "class": 12, "subjects": ["Physics", "Chemistry"], "isActive": false },
+  { "id": 3, "name": "Ahmed", "age": 17, "class": 12, "subjects": ["Biology", "English"], "isActive": true },
+  { "id": 4, "name": "Aisha", "age": 16, "class": 10, "subjects": ["Math", "Urdu"], "isActive": true }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Ali Khan",
+    "age": 16,
+    "class": "10th",
+    "subjects": ["Math", "Physics", "Chemistry"],
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Sara Ahmed",
+    "age": 17,
+    "class": "11th",
+    "subjects": ["Biology", "English", "Urdu"],
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Hamza Iqbal",
+    "age": 15,
+    "class": "9th",
+    "subjects": ["Math", "Computer Science"],
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "name": "Areeba Fatima",
+    "age": 18,
+    "class": "12th",
+    "subjects": ["Physics", "Math", "English"],
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "name": "Bilal Mirza",
+    "age": 14,
+    "class": "8th",
+    "subjects": ["Urdu", "Islamiyat", "Math"],
+    "isActive": true
+  },
+  {
+    "id": 6,
+    "name": "Hina Rauf",
+    "age": 16,
+    "class": "10th",
+    "subjects": ["Biology", "Chemistry"],
+    "isActive": false
+  },
+  {
+    "id": 7,
+    "name": "Omar Siddiqui",
+    "age": 17,
+    "class": "11th",
+    "subjects": ["Math", "Physics", "English"],
+    "isActive": true
+  },
+  {
+    "id": 8,
+    "name": "Zainab Jamil",
+    "age": 15,
+    "class": "9th",
+    "subjects": ["Computer Science", "Math"],
+    "isActive": true
+  },
+  {
+    "id": 9,
+    "name": "Yasir Nawaz",
+    "age": 13,
+    "class": "7th",
+    "subjects": ["Science", "Math", "History"],
+    "isActive": false
+  },
+  {
+    "id": 10,
+    "name": "Mehwish Anwar",
+    "age": 18,
+    "class": "12th",
+    "subjects": ["English", "Biology", "Islamiyat"],
+    "isActive": true
+  }
+]

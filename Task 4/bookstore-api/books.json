@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Book One",
+    "author": "John Doe",
+    "genre": "Fiction",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "title": "Book Two",
+    "author": "Jane Smith",
+    "genre": "Non-Fiction",
+    "price": 15
+  },
+  {
+    "id": 3,
+    "title": "Book Three",
+    "author": "John Doe",
+    "genre": "Fiction",
+    "price": 45
+  }
+]

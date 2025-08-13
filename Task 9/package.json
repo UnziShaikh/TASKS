@@ -1,0 +1,14 @@
+{
+  "name": "attendance-tracker-backend",
+  "version": "1.0.0",
+  "description": "Simple Attendance Tracker API (backend only) using Node.js, Express, and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.0"
+  }
+}
